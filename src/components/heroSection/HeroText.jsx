@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import { calculateExperience } from "../experienceSection/calculateExperience";
 
 const HeroText = () => {
+    const experienceStartDate = "2021-08-21";
+
+  const totalExperience = calculateExperience(experienceStartDate);
   return (
     <div className="flex flex-col gap-4 h-full justify-center md:text-left sm:text-center">
       <motion.h2
@@ -11,7 +15,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
       >
-        Front-End Web Developer
+        FullStack Developer
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -30,8 +34,8 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4"
       >
-        A Passionate Web Developer and Instructor <br /> with 4 years of
-        experience.
+       { `A Passionate Web Developer and Instructor  with ${totalExperience} years of
+        experience.`}
       </motion.p>
     </div>
   );

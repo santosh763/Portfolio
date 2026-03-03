@@ -6,8 +6,9 @@ import { fadeIn } from "../../framerMotion/variants";
 const experiences = [
   {
     job: "Software Developer Intern",
-    company: "Interface Software Solution",
+    company: "Interface Software Services",
     date: "2020 - 2021",
+    companyLink: "https://inss.in/",
     responsibilities: [
       "Supported development of internal web tools.",
       "Worked on UI fixes and bug resolutions.",
@@ -15,9 +16,10 @@ const experiences = [
     ],
   },
   {
-    job: "Front-End Developer",
-    company: "LTIMindtree",
-    date: "2021 - Present",
+    job: "Senior Software Engineer",
+    company: "LTM",
+    date: "2022 - Present",
+    companyLink: "https://www.ltm.com/",
     responsibilities: [
       "Developing scalable web apps with React.",
       "Working on internal tools like QuickMigrate CLI.",
@@ -28,7 +30,8 @@ const experiences = [
   {
     job: "Full-Stack Developer (Personal Projects)",
     company: "Self-initiated",
-    date: "2022 - Present",
+    date: "2021 - Present",
+    companyLink: "/",
     responsibilities: [
       "Built LoveSpark – a relationship-focused web app.",
       "Developing Let's Crackit – a MERN app for exam prep.",
